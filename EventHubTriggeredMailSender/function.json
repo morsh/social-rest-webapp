@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "eventHubMessages",
+      "direction": "in",
+      "path": "%EVENTHUBS_EH_NAME%",
+      "connection": "EVENTHUBS_CONNECTIONSTRING",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ],
+  "disabled": false
+}

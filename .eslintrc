@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "rallycoding",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "no-unused-vars": [
+      1,
+      {
+        "argsIgnorePattern": "res|next|^err"
+      }
+    ],
+    "quotes": [
+      2,
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true,
+        "printWidth": 120
+      }
+    ]
+  },
+  "plugins": [
+    "prettier"
+  ]
+}
